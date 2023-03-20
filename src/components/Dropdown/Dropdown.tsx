@@ -18,6 +18,7 @@ const Dropdown = () => {
     const [isOpenSelect, setIsOpenSelect] = useState<boolean>(false)
     const [countries, setCountries] = useState<Item[]>(countriesList)
     const [checkedItems, setCheckedItems] = useState<Item[]>([]);
+    
     const filteredCountries = countries.filter(country => {
         return country.title.toLowerCase().includes(valueCountry.toLowerCase())
     })
@@ -48,11 +49,11 @@ const Dropdown = () => {
                         </div>
                     ))}
                 </div>
-                <img src={arrow} 
-                style={{
-                    transform: isOpenSelect ? 'rotate(180deg)' :  'rotate(0deg)'
-                }}
-                alt="arrow-icon" onClick={() => setIsOpenSelect(!isOpenSelect)} className={css.arrow_up} />
+                <img src={arrow}
+                    style={{
+                        transform: isOpenSelect ? 'rotate(180deg)' : 'rotate(0deg)'
+                    }}
+                    alt="arrow-icon" onClick={() => setIsOpenSelect(!isOpenSelect)} className={css.arrow_up} />
             </div>
             {isOpenSelect &&
                 <div className={css.accordion}>
@@ -84,8 +85,7 @@ const Dropdown = () => {
                     </div>
                 </div>
             }
-
-        </div >
+        </div>
     );
 };
 

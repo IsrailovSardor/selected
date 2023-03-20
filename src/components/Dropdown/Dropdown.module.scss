@@ -1,6 +1,6 @@
 .dropdown {
+    width: 100%;
     max-width: 400px;
-    height: auto;
     position: relative;
 
     .dropdown__label {
@@ -15,8 +15,9 @@
         border-radius: 10px;
         height: auto;
         width: 100%;
+        height: auto;
         min-height: 42px;
-        display: grid;
+        display: flex;
         align-items: flex-start;
         justify-content: space-between;
         grid-template-columns: 1fr 16px;
@@ -64,7 +65,7 @@
         border-radius: 12px;
         padding: 16px 16px 0;
         position: absolute;
-        top: 108%;
+        top: 110%;
 
         .input__block {
             display: flex;

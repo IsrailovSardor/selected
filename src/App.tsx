@@ -1,9 +1,11 @@
 import Dropdown from "./components/Dropdown/Dropdown";
-
+import './assets/styles/index.scss'
 
 function App() {
   return (
-    <Dropdown />
+    <div className='wrapper'>
+      <Dropdown />
+    </div>
   );
 }
 
