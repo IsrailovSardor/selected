@@ -1,0 +1,96 @@
+.accordion {
+    width: 100%;
+    max-width: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 32px rgba(51, 51, 51, 0.15);
+    border-radius: 12px;
+    padding: 16px 16px 0;
+    position: absolute;
+    top: 110%;
+
+    .accordion__item {
+        display: flex;
+        flex-direction: column;
+        height: 312px;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        .label__item {
+            padding: 14px 0;
+            background: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: -16px;
+                border: 1px solid #F4F4F4;
+                width: calc(100% + 32px);
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font: 400 16px/20px 'Inter';
+                color: #333333;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            .custom_checkbox {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+
+            .custom_checkbox+label::after {
+                content: '';
+                width: 24px;
+                height: 24px;
+                background: #FFFFFF;
+                border: 2px solid #C1C1C1;
+                border-radius: 6px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: 0.1s;
+            }
+
+            .custom_checkbox:checked+label::after {
+                background: #005FFD;
+                border: 2px solid #0049D9;
+                border-radius: 6px;
+                background-image: url("../../../assets/media/checked.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 60% 60%;
+                transition: 0.1s;
+            }
+        }
+
+        .lenght__item {
+            padding: 14px 0;
+            background: #FFFFFF;
+            font: 400 16px/20px 'Inter';
+            color: #333333;
+        }
+    }
+}

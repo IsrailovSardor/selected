@@ -1,0 +1,26 @@
+.dropdown__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    .dropdown__item {
+        display: flex;
+        align-items: center;
+        padding: 6px 12px;
+        gap: 8px;
+        background: #F4F4F4;
+        border-radius: 8px;
+
+        .item__title {
+            font: 500 12px/12px 'Inter';
+            color: #333333;
+        }
+
+        .item__delete {
+            height: 12px;
+            width: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+}

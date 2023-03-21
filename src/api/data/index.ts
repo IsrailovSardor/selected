@@ -1,9 +1,9 @@
-import ru from '../assets/media/flags/ru.svg'
-import en from '../assets/media/flags/en.svg'
-import es from '../assets/media/flags/es.svg'
-import it from '../assets/media/flags/it.svg'
-import nz from '../assets/media/flags/nz.svg'
-import pl from '../assets/media/flags/pl.svg'
+import ru from '../../assets/media/flags/ru.svg'
+import en from '../../assets/media/flags/en.svg'
+import es from '../../assets/media/flags/es.svg'
+import it from '../../assets/media/flags/it.svg'
+import nz from '../../assets/media/flags/nz.svg'
+import pl from '../../assets/media/flags/pl.svg'
 
 
 export const countriesList = [

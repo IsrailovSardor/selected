@@ -1,5 +1,5 @@
-import Dropdown from "./components/Dropdown/Dropdown";
 import './assets/styles/index.scss'
+import Dropdown from './modules/Dropdown/Dropdown';
 
 function App() {
   return (
